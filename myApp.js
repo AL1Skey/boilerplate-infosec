@@ -49,7 +49,9 @@ const app = express();
 
 module.exports = app;
 const api = require('./server.js');
-const helmet = require('helmet')
+const helmet = require('helmet');
+const cors = require('cors')
+app.use(cors())
 app.use(express.static('public'));
 app.disable('strict-transport-security');
 app.use('/_api', api);
