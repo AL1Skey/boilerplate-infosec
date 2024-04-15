@@ -2,9 +2,6 @@ const express = require('express');
 const app = express();
 
 
-const test =1
-
-
 
 
 
